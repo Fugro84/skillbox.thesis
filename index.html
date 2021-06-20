@@ -27,11 +27,11 @@
 		<!-- Высплывающие формы -->
 		<div class="popup-container-call">
 			<div class="popup-call">
-				<form class="form display-flex" method="post">
+				<form class="form display-flex" action="#" method="post">
 					<h1 class="form__title">Отправить заявку</h1>
 					<div class="form__group display-flex">
 						<input type="text" name="name" placeholder="Введите Ваше имя">
-						<input type="phone" name="phone" placeholder="Введите Ваш телефон">
+						<input type="number" name="phone" placeholder="Введите Ваш телефон">
 					</div>
 					<button class="btn btn--stroke btn-reset form__button js-submit" type="submit" name="button">
 						<span>Отправить</span>
@@ -45,7 +45,7 @@
 					<h1 class="form__title">Отправить заявку</h1>
 					<div class="form__group display-flex">
 						<input type="text" name="name" placeholder="Введите Ваше имя">
-						<input type="phone" name="phone" placeholder="Введите Ваш телефон">
+						<input type="number" name="phone" placeholder="Введите Ваш телефон">
 						<input type="email" name="email" placeholder="Введите Вашу почту">
 					</div>
 					<button class="btn btn--stroke btn-reset form__button js-submit" type="submit" name="button">
@@ -61,7 +61,6 @@
         <nav class="header__nav nav display-flex">
 					<input type="checkbox" id="nav-mob-bar">
           <button class="btn-reset burger header__burger">
-          	<label for="nav-mob-bar"></label>
           </button>
           <ul class="nav__list display-flex">
             <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
@@ -127,7 +126,7 @@
 						<p class="my-services__text">Исправление и доработка существующей вёртски</p>
 					</div>
 				</div>
-				<button href="#" class="btn btn-fill services-and-prices__btn btn-reset js-price">Узнать стоимость</button>
+				<button class="btn btn-fill services-and-prices__btn btn-reset js-price">Узнать стоимость</button>
 			</section>
 		</div>
 
@@ -167,7 +166,7 @@
 					<div class="swiper-pagination"></div>
 	      </div>
 				<div class="btn-fill">
-					<button href="#" class="btn btn-fill work-examples__link btn-reset js-order-project">Заказать проект</button>
+					<button class="btn btn-fill work-examples__link btn-reset js-order-project">Заказать проект</button>
 				</div>
 	    </div>
 		</div>
