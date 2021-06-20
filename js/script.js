@@ -44,7 +44,6 @@ $(function(){
 $(function(){
   // Мобильная навигация
   let navButton = $('.burger'),
-      navMobMenuOpen = $('input[type="radio"]:checked'),
       navMobMenu = $('.header__nav-burger');
 
   navButton.click(function(){
