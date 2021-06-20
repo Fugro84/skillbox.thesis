@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+	<title>Thesis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/header.css">
+	<link rel="stylesheet" type="text/css" href="styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="styles/media.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+	<div class="page-container">
+
+		<!-- Высплывающие формы -->
+		<div class="popup-container-call">
+			<div class="popup-call">
+				<form class="form display-flex" method="post">
+					<h1 class="form__title">Отправить заявку</h1>
+					<div class="form__group display-flex">
+						<input type="text" name="name" placeholder="Введите Ваше имя">
+						<input type="phone" name="phone" placeholder="Введите Ваш телефон">
+					</div>
+					<button class="btn btn--stroke btn-reset form__button js-submit" type="submit" name="button">
+						<span>Отправить</span>
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="popup-container-email">
+			<div class="popup-email">
+				<form class="form display-flex" method="post">
+					<h1 class="form__title">Отправить заявку</h1>
+					<div class="form__group display-flex">
+						<input type="text" name="name" placeholder="Введите Ваше имя">
+						<input type="phone" name="phone" placeholder="Введите Ваш телефон">
+						<input type="email" name="email" placeholder="Введите Вашу почту">
+					</div>
+					<button class="btn btn--stroke btn-reset form__button js-submit" type="submit" name="button">
+						<span>Отправить</span>
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- Навигационное меню, обратная связь -->
+		<header class="header">
+      <div class="fixed-container header__container display-flex">
+        <nav class="header__nav nav display-flex">
+					<input type="checkbox" id="nav-mob-bar">
+          <button class="btn-reset burger header__burger">
+          	<label for="nav-mob-bar"></label>
+          </button>
+          <ul class="nav__list display-flex">
+            <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+            <li class="nav__item"><a href="#portfolio" class="nav__link">Портфолио</a></li>
+            <li class="nav__item"><a href="#prices" class="nav__link">Стоимость</a></li>
+          </ul>
+        </nav>
+        <a href="tel:+74999955577" class="header__phone phone">+7 (499) 995-55-77</a>
+        <button class="btn btn--stroke header__btn btn-reset js-call-me">Заказать звонок</button>
+      </div>
+			<nav class="header__nav-container">
+				<ul class="header__nav-burger display-flex toggle_menu">
+					<li class="burger__item"><a href="#services">Услуги</a></li>
+					<li class="burger__item"><a href="#portfolio">Портфолио</a></li>
+					<li class="burger__item"><a href="#prices">Стоимость</a></li>
+				</ul>
+			</nav>
+    </header>
+
+		<section class="about">
+      <span class="fly-tag-about fly-tag--braces">{&nbsp;}</span>
+      <span class="fly-tag-about fly-tag--div">&lt;div&gt;</span>
+      <span class="fly-tag-about fly-tag--hash">#</span>
+      <span class="fly-tag-about fly-tag--div2">&lt;div&gt;</span>
+			<span class="fly-tag-about fly-tag--fwdslash">&lt;/&gt;</span>
+      <span class="fly-tag-about fly-tag--closed">&lt;/&gt;</span>
+      <div class="fixed-container about__container">
+      	<div class="about-info">
+          <h1 class="about-info__title">
+            Дмитрий Алексеев
+            <span class="about-info__title--sub">Frontend-разработчик и веб-верстальщик</span>
+          </h1>
+          <button type="submit" class="btn btn-fill about-info__btn btn-reset js-more-info">Узнать больше</button>
+        </div>
+        <img src="img/man.png" alt="Дмитрий Алексеев, фронтенд-разработчик и веб-верстальщик" class="about__image">
+      </div>
+      <picture>
+        <source media="(max-width:576px)" srcset="img/ellipse-mob.png">
+        <source media="(max-width:1440px)" srcset="img/ellipse-tablet.png">
+        <img src="img/ellipse.svg" alt="ellipse" class="about__svg" aria-hidden="true">
+      </picture>
+    </section>
+
+		<!-- Секция "Что я делаю" -->
+		<div class="first-middle-fixed-container" id="services">
+			<section class="services-and-prices display-flex">
+				<h1 class="services-and-prices__title headers-my-works">Что я делаю</h1>
+				<div class="my-services-container display-flex">
+					<div class="my-services">
+						<img class="my-services__img" src="img/landing.png" alt="Лэндинг-страница">
+						<p class="my-services__text">Вёрстка лендинг-страниц и&nbsp;сайтов любой сложности</p>
+					</div>
+					<div class="my-services">
+						<img class="my-services__img" src="img/responsive.png" alt="Адаптивная вёрстка">
+						<p class="my-services__text">Адаптивная вёрстка под все браузеры&nbsp; и устройства</p>
+					</div>
+					<div class="my-services">
+						<img class="my-services__img" src="img/programming.png" alt="Программирование">
+						<p class="my-services__text">Frontend-разработка и&nbsp;программирование</p>
+					</div>
+					<div class="my-services">
+						<img class="my-services__img" src="img/coding.png" alt="Доработка страниц">
+						<p class="my-services__text">Исправление и доработка существующей вёртски</p>
+					</div>
+				</div>
+				<button href="#" class="btn btn-fill services-and-prices__btn btn-reset js-price">Узнать стоимость</button>
+			</section>
+		</div>
+
+		<!-- Секция "Примеры моих работ" со слайдером -->
+		<div class="second-middle-fixed-container" id="portfolio">
+			<div class="wrapper">
+				<div class="slide-controls">
+					<button class="swiper-button-prev"></button>
+					<button class="swiper-button-next"></button>
+				</div>
+				<div class="wrapper__header">
+					<h1 class="work-examples__title headers-my-works">Примеры моих работ</h1>
+				</div>
+	      <div class="image-slider swiper-container">
+	  			<div class="swiper-wrapper">
+	              <div class="swiper-slide work-examples__item">
+	  							<img class="work-examples__img" src="img/psychologist.png" alt="Психолог">
+									<img class="work-examples__img_1024" src="img/psychologist_1024.png" alt="Психолог">
+									<img class="work-examples__img_320" src="img/psychologist_320.png" alt="Психолог">
+	  							<p class="work-examples__text">Сайт психолога Веры Антоновой</p>
+	  						</div>
+	  						<div class="swiper-slide work-examples__item">
+	  							<img class="work-examples__img" src="img/toyshop.png" alt="Магазин игрушек">
+									<img class="work-examples__img_1024" src="img/toyshop_1024.png" alt="Магазин игрушек">
+									<img class="work-examples__img_320" src="img/toyshop_320.png" alt="Магазин игрушек">
+	  							<p class="work-examples__text work-examples__text1">Сайт магазина детской одежды</p>
+	  							<p class="work-examples__text work-examples__text2">Интернет-магазин детской одежды</p>
+									<p class="work-examples__text work-examples__text3">Сайт магазина детской одежды</p>
+	  						</div>
+	  						<div class="swiper-slide work-examples__item">
+	  							<img class="work-examples__img" src="img/fishshop.png" alt="Рыболовный магазин">
+									<img class="work-examples__img_1024" src="img/fishshop_1024.png" alt="Рыболовный магазин">
+									<img class="work-examples__img_320" src="img/fishshop_320.png" alt="Рыболовный магазин">
+	  							<p class="work-examples__text">Сайт магазина <q>Рыболов</q></p>
+	  						</div>
+	        </div>
+					<div class="swiper-pagination"></div>
+	      </div>
+				<div class="btn-fill">
+					<button href="#" class="btn btn-fill work-examples__link btn-reset js-order-project">Заказать проект</button>
+				</div>
+	    </div>
+		</div>
+
+		<!-- Секция "Реклама" -->
+		<div class="low-fixed-container" id="prices">
+			<span class="fly-tag-ads fly-tag-ads--braces">{&nbsp;}</span>
+      <span class="fly-tag-ads fly-tag-ads--div">&lt;div&gt;</span>
+      <span class="fly-tag-ads fly-tag-ads--hash">#</span>
+      <span class="fly-tag-ads fly-tag-ads--braces2">{&nbsp;}</span>
+			<span class="fly-tag-ads fly-tag-ads--fwdslash">&lt;/&gt;</span>
+			<section class="advertisement display-flex">
+				<div class="advertisement-section">
+					<h1 class="advertisement-section__title advertisement-section__title-desktop">Адаптивная вёрстка под все&nbsp;устройства<br>
+						и&nbsp;браузеры от&nbsp;1000&nbsp;рублей всего за&nbsp;4&nbsp;часа.*</h1>
+					<h1 class="advertisement-section__title advertisement-section__title-320">Адаптивная вёрстка под все&nbsp;устройства<br>
+						и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*</h1>
+					<div class="advertisement-section_text-container">
+						<p class="advertisement-section__text">Срок и стоимость могут отличаться
+							от заявленных и рассчитываются индивидуально,
+							в зависимости от&nbsp;сложности задач.
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Подвал сайта -->
+		<footer class="footer">
+			<div class="upper-section display-flex">
+				<div class="footer-nav">
+					<ul class="display-flex footer-nav__list">
+						<li class="footer-nav__item"><a class="footer-nav__link" href="#">Услуги</a></li>
+						<li class="footer-nav__item"><a class="footer-nav__link" href="#">Портфолио</a></li>
+						<li class="footer-nav__item"><a class="footer-nav__link" href="#">Стоимость</a></li>
+					</ul>
+				</div>
+				<div class="footer-contacts display-flex">
+					<a class="contact-block__my-phone" href="tel:+74999955577">+7 (499) 995-77-55</a>
+					<a class="footer-contacts__email" href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
+				</div>
+				<div class="social">
+					<button class="btn btn--stroke footer__btn btn-reset js-call-me">Заказать звонок</button>
+					<button class="btn btn-fill btn-reset footer__btn-320 js-call-me">Заказать звонок</button>
+					<ul class="display-flex social__list">
+						<li class="social__item"><a class="social__link" href="#">VK</a></li>
+						<li class="social__item"><a class="social__link" href="#">Facebook</a></li>
+						<li class="social__item"><a class="social__link" href="#">Twitter</a></li>
+						<li class="social__item"><a class="social__link" href="#">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="lower-section display-flex">
+				<p class="lower-section__text">&#169; Дмитрий Алексеев, 2016 — 2018</p>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/swiper.js"></script>
+</body>
+
+</html>
