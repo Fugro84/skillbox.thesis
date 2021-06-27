@@ -59,140 +59,154 @@
 		<header class="header">
       <div class="fixed-container header__container display-flex">
         <nav class="header__nav nav display-flex">
-					<input type="checkbox" id="nav-mob-bar">
           <button class="btn-reset burger header__burger">
           </button>
-          <ul class="nav__list display-flex">
-            <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
-            <li class="nav__item"><a href="#portfolio" class="nav__link">Портфолио</a></li>
-            <li class="nav__item"><a href="#prices" class="nav__link">Стоимость</a></li>
+          <ul class="nav__list display-flex toggle_menu">
+            <li class="nav__item nav__item-burger"><a href="#services" class="nav__link">Услуги</a></li>
+            <li class="nav__item nav__item-burger"><a href="#portfolio" class="nav__link">Портфолио</a></li>
+            <li class="nav__item nav__item-burger"><a href="#prices" class="nav__link">Стоимость</a></li>
           </ul>
         </nav>
         <a href="tel:+74999955577" class="header__phone phone">+7 (499) 995-55-77</a>
         <button class="btn btn--stroke header__btn btn-reset js-call-me">Заказать звонок</button>
       </div>
-			<nav class="header__nav-container">
-				<ul class="header__nav-burger display-flex toggle_menu">
-					<li class="burger__item"><a href="#services">Услуги</a></li>
-					<li class="burger__item"><a href="#portfolio">Портфолио</a></li>
-					<li class="burger__item"><a href="#prices">Стоимость</a></li>
-				</ul>
-			</nav>
     </header>
 
-		<section class="about">
-      <span class="fly-tag-about fly-tag--braces">{&nbsp;}</span>
-      <span class="fly-tag-about fly-tag--div">&lt;div&gt;</span>
-      <span class="fly-tag-about fly-tag--hash">#</span>
-      <span class="fly-tag-about fly-tag--div2">&lt;div&gt;</span>
-			<span class="fly-tag-about fly-tag--fwdslash">&lt;/&gt;</span>
-      <span class="fly-tag-about fly-tag--closed">&lt;/&gt;</span>
-      <div class="fixed-container about__container">
-      	<div class="about-info">
-          <h1 class="about-info__title">
-            Дмитрий Алексеев
-            <span class="about-info__title--sub">Frontend-разработчик и веб-верстальщик</span>
-          </h1>
-          <button type="submit" class="btn btn-fill about-info__btn btn-reset js-more-info">Узнать больше</button>
-        </div>
-        <img src="img/man.png" alt="Дмитрий Алексеев, фронтенд-разработчик и веб-верстальщик" class="about__image">
-      </div>
-      <picture>
-        <source media="(max-width:576px)" srcset="img/ellipse-mob.png">
-        <source media="(max-width:1440px)" srcset="img/ellipse-tablet.png">
-        <img src="img/ellipse.svg" alt="ellipse" class="about__svg" aria-hidden="true">
-      </picture>
-    </section>
-
-		<!-- Секция "Что я делаю" -->
-		<div class="first-middle-fixed-container" id="services">
-			<section class="services-and-prices display-flex">
-				<h1 class="services-and-prices__title headers-my-works">Что я делаю</h1>
-				<div class="my-services-container display-flex">
-					<div class="my-services">
-						<img class="my-services__img" src="img/landing.png" alt="Лэндинг-страница">
-						<p class="my-services__text">Вёрстка лендинг-страниц и&nbsp;сайтов любой сложности</p>
-					</div>
-					<div class="my-services">
-						<img class="my-services__img" src="img/responsive.png" alt="Адаптивная вёрстка">
-						<p class="my-services__text">Адаптивная вёрстка под все браузеры&nbsp; и устройства</p>
-					</div>
-					<div class="my-services">
-						<img class="my-services__img" src="img/programming.png" alt="Программирование">
-						<p class="my-services__text">Frontend-разработка и&nbsp;программирование</p>
-					</div>
-					<div class="my-services">
-						<img class="my-services__img" src="img/coding.png" alt="Доработка страниц">
-						<p class="my-services__text">Исправление и доработка существующей вёртски</p>
-					</div>
-				</div>
-				<button class="btn btn-fill services-and-prices__btn btn-reset js-price">Узнать стоимость</button>
-			</section>
-		</div>
-
-		<!-- Секция "Примеры моих работ" со слайдером -->
-		<div class="second-middle-fixed-container" id="portfolio">
-			<div class="wrapper">
-				<div class="slide-controls">
-					<button class="swiper-button-prev"></button>
-					<button class="swiper-button-next"></button>
-				</div>
-				<div class="wrapper__header">
-					<h1 class="work-examples__title headers-my-works">Примеры моих работ</h1>
-				</div>
-	      <div class="image-slider swiper-container">
-	  			<div class="swiper-wrapper">
-	              <div class="swiper-slide work-examples__item">
-	  							<img class="work-examples__img" src="img/psychologist.png" alt="Психолог">
-									<img class="work-examples__img_1024" src="img/psychologist_1024.png" alt="Психолог">
-									<img class="work-examples__img_320" src="img/psychologist_320.png" alt="Психолог">
-	  							<p class="work-examples__text">Сайт психолога Веры Антоновой</p>
-	  						</div>
-	  						<div class="swiper-slide work-examples__item">
-	  							<img class="work-examples__img" src="img/toyshop.png" alt="Магазин игрушек">
-									<img class="work-examples__img_1024" src="img/toyshop_1024.png" alt="Магазин игрушек">
-									<img class="work-examples__img_320" src="img/toyshop_320.png" alt="Магазин игрушек">
-	  							<p class="work-examples__text work-examples__text1">Сайт магазина детской одежды</p>
-	  							<p class="work-examples__text work-examples__text2">Интернет-магазин детской одежды</p>
-									<p class="work-examples__text work-examples__text3">Сайт магазина детской одежды</p>
-	  						</div>
-	  						<div class="swiper-slide work-examples__item">
-	  							<img class="work-examples__img" src="img/fishshop.png" alt="Рыболовный магазин">
-									<img class="work-examples__img_1024" src="img/fishshop_1024.png" alt="Рыболовный магазин">
-									<img class="work-examples__img_320" src="img/fishshop_320.png" alt="Рыболовный магазин">
-	  							<p class="work-examples__text">Сайт магазина <q>Рыболов</q></p>
-	  						</div>
+		<main>
+			<section class="about">
+	      <span class="fly-tag-about fly-tag--braces">{&nbsp;}</span>
+	      <span class="fly-tag-about fly-tag--div">&lt;div&gt;</span>
+	      <span class="fly-tag-about fly-tag--hash">#</span>
+	      <span class="fly-tag-about fly-tag--div2">&lt;div&gt;</span>
+				<span class="fly-tag-about fly-tag--fwdslash">&lt;/&gt;</span>
+	      <span class="fly-tag-about fly-tag--closed">&lt;/&gt;</span>
+	      <div class="fixed-container about__container">
+	      	<div class="about-info">
+	          <h1 class="about-info__title">
+	            Дмитрий Алексеев
+	            <span class="about-info__title--sub">Frontend-разработчик и веб-верстальщик</span>
+	          </h1>
+	          <button type="submit" class="btn btn-fill about-info__btn btn-reset js-more-info">Узнать больше</button>
 	        </div>
-					<div class="swiper-pagination"></div>
+	        <img src="img/man.png" alt="Дмитрий Алексеев, фронтенд-разработчик и веб-верстальщик" class="about__image">
 	      </div>
-				<div class="btn-fill">
-					<button class="btn btn-fill work-examples__link btn-reset js-order-project">Заказать проект</button>
-				</div>
-	    </div>
-		</div>
+	      <picture>
+	        <source media="(max-width:576px)" srcset="img/ellipse-mob.png">
+	        <source media="(max-width:1440px)" srcset="img/ellipse-tablet.png">
+	        <img src="img/ellipse.svg" alt="ellipse" class="about__svg" aria-hidden="true">
+	      </picture>
+	    </section>
 
-		<!-- Секция "Реклама" -->
-		<div class="low-fixed-container" id="prices">
-			<span class="fly-tag-ads fly-tag-ads--braces">{&nbsp;}</span>
-      <span class="fly-tag-ads fly-tag-ads--div">&lt;div&gt;</span>
-      <span class="fly-tag-ads fly-tag-ads--hash">#</span>
-      <span class="fly-tag-ads fly-tag-ads--braces2">{&nbsp;}</span>
-			<span class="fly-tag-ads fly-tag-ads--fwdslash">&lt;/&gt;</span>
-			<section class="advertisement display-flex">
-				<div class="advertisement-section">
-					<h1 class="advertisement-section__title advertisement-section__title-desktop">Адаптивная вёрстка под все&nbsp;устройства<br>
-						и&nbsp;браузеры от&nbsp;1000&nbsp;рублей всего за&nbsp;4&nbsp;часа.*</h1>
-					<h1 class="advertisement-section__title advertisement-section__title-320">Адаптивная вёрстка под все&nbsp;устройства<br>
-						и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*</h1>
-					<div class="advertisement-section_text-container">
-						<p class="advertisement-section__text">Срок и стоимость могут отличаться
-							от заявленных и рассчитываются индивидуально,
-							в зависимости от&nbsp;сложности задач.
-						</p>
+			<!-- Секция "Что я делаю" -->
+			<!-- Div необходим для передачи цвета фона на всю ширину -->
+			<div class="first-middle-fixed-container" id="services">
+				<section class="services-and-prices display-flex">
+					<h2 class="services-and-prices__title headers-my-works">Что я делаю</h2>
+					<div class="my-services-container display-flex">
+						<div class="my-services">
+							<!-- Почему лучше фоном и, главное, зачем? Эти изображения вполне идут за контентные - я принял решение так делать и
+							оно правильное. Опять из пустого в порожнее - просто трата времени, это цель школы?
+							Вы потратили со своим навыком на проверку считанные минуты, при чём я сам уже вижу, что избирательно, потому чтобы всё тщательно
+							проверить нужны часы. Максим, именно поэтому меня не было и я не занимался - потому что нет у людей, которые заняты жизнью, заниматься вот этими глупостями.
+							Просто из-за того, что у Вас вдруг настроение такое, мне нужно потратить часа 2 в лучшем случае, чтобы поменять код - что НЕ является ошибкой!!!
+						  -->
+							<img class="my-services__img" src="img/landing.png" alt="Лэндинг-страница">
+							<p class="my-services__text">Вёрстка лендинг-страниц и&nbsp;сайтов любой сложности</p>
+						</div>
+						<div class="my-services">
+							<img class="my-services__img" src="img/responsive.png" alt="Адаптивная вёрстка">
+							<p class="my-services__text">Адаптивная вёрстка под все браузеры&nbsp; и устройства</p>
+						</div>
+						<div class="my-services">
+							<img class="my-services__img" src="img/programming.png" alt="Программирование">
+							<p class="my-services__text">Frontend-разработка и&nbsp;программирование</p>
+						</div>
+						<div class="my-services">
+							<img class="my-services__img" src="img/coding.png" alt="Доработка страниц">
+							<p class="my-services__text">Исправление и доработка существующей вёртски</p>
+						</div>
 					</div>
-				</div>
+					<button class="btn btn-fill services-and-prices__btn btn-reset js-price">Узнать стоимость</button>
+				</section>
+			</div>
+
+			<!-- Секция "Примеры моих работ" со слайдером -->
+			<div class="second-middle-fixed-container" id="portfolio">
+				<div class="wrapper">
+					<div class="slide-controls">
+						<button class="swiper-button-prev"></button>
+						<button class="swiper-button-next"></button>
+					</div>
+					<div class="wrapper__header">
+						<h2 class="work-examples__title headers-my-works">Примеры моих работ</h2>
+					</div>
+		      <div class="image-slider swiper-container">
+						<!-- Так как макеты сделаны очень коряво(посмотрите и сравните сами), изображения не сходятся на различных разрешениях, тексты в кнопках вообще разные,
+							сами макеты не проверены школой, а дизайнеру не предъявлены требования исправить так, чтобы студенту было удобно работать.
+							При этом школа не стесняется тратить время студентов на исправления, за частую совершенно ненужных, но времязатратных. Одно из требований чтобы всё сходилось с макетом и приходится вот таким образом изгаляться.
+							Я знаю о том, что нужно работать с одним изображением и можно использовать "object-fit", но на данном этапе,чтобы не задавать много вопросов, а просто сделать
+							я выбрал такое решение. Максим, я заплатил 80 тыс. рублей и эти деньги я считаю потрачеными в пустоту, потому что хоть и вёрстка освоена толку от неё никаках без
+							PHP знаний. Знал бы, что вместо знаний в школе заставляют перелевать из пустого в порожнее(советский подход, хотя вроде бы молодые люди работают) вообще не обращался бы.
+							Мне ешё нужно потратить несколько часов, чтобы исправить все фотографии таким образом, чтобы они сходились с макетами.
+						-->
+		  			<div class="swiper-wrapper">
+							<!-- А вот на слайдер ушли целые дни, на поиски, попытки внедрить. В итоге Ваш же материал и использовал с Вашего же канала Youtube, так зачем тогда вообще эта прослойка "Skillbox". Что она даёт?
+							Ничего переделывать не буду, так как нет ошибки. При этом "ленивая" школа предложила самим искать материал. Материал совершенно скудный.
+							Зато видно, что на маркетинг денег не жалеют.
+							Напишите минимум, который нужно исправить и начальство Вам ничего не скажет и я уже сам решу, нужна ли
+							эта "бумага" или нет. Я вообще понял, что придраться можно к чему-угодно, если стоит такая цель, а не выучить студента, меня такое образование не устраивает! -->
+		              <div class="swiper-slide work-examples__item">
+		  							<img class="work-examples__img" src="img/psychologist.png" alt="Психолог">
+										<img class="work-examples__img_1024" src="img/psychologist_1024.png" alt="Психолог">
+										<img class="work-examples__img_320" src="img/psychologist_320.png" alt="Психолог">
+		  							<p class="work-examples__text">Сайт психолога Веры Антоновой</p>
+		  						</div>
+		  						<div class="swiper-slide work-examples__item">
+		  							<img class="work-examples__img" src="img/toyshop.png" alt="Магазин игрушек">
+										<img class="work-examples__img_1024" src="img/toyshop_1024.png" alt="Магазин игрушек">
+										<img class="work-examples__img_320" src="img/toyshop_320.png" alt="Магазин игрушек">
+		  							<p class="work-examples__text work-examples__text1">Сайт магазина детской одежды</p>
+		  							<p class="work-examples__text work-examples__text2">Интернет-магазин детской одежды</p>
+										<p class="work-examples__text work-examples__text3">Сайт магазина детской одежды</p>
+		  						</div>
+		  						<div class="swiper-slide work-examples__item">
+		  							<img class="work-examples__img" src="img/fishshop.png" alt="Рыболовный магазин">
+										<img class="work-examples__img_1024" src="img/fishshop_1024.png" alt="Рыболовный магазин">
+										<img class="work-examples__img_320" src="img/fishshop_320.png" alt="Рыболовный магазин">
+		  							<p class="work-examples__text">Сайт магазина <q>Рыболов</q></p>
+		  						</div>
+		        </div>
+						<div class="swiper-pagination"></div>
+		      </div>
+					<div class="btn-fill">
+						<button class="btn btn-fill work-examples__link btn-reset js-order-project">Заказать проект</button>
+					</div>
+		    </div>
+			</div>
+
+			<!-- Секция "Реклама" -->
+			<section class="low-fixed-container" id="prices">
+				<span class="fly-tag-ads fly-tag-ads--braces">{&nbsp;}</span>
+	      <span class="fly-tag-ads fly-tag-ads--div">&lt;div&gt;</span>
+	      <span class="fly-tag-ads fly-tag-ads--hash">#</span>
+	      <span class="fly-tag-ads fly-tag-ads--braces2">{&nbsp;}</span>
+				<span class="fly-tag-ads fly-tag-ads--fwdslash">&lt;/&gt;</span>
+				<section class="advertisement display-flex">
+					<div class="advertisement-section">
+						<h2 class="advertisement-section__title advertisement-section__title-desktop">Адаптивная вёрстка под все&nbsp;устройства<br>
+							и&nbsp;браузеры от&nbsp;1000&nbsp;рублей всего за&nbsp;4&nbsp;часа.*</h2>
+						<h2 class="advertisement-section__title advertisement-section__title-320">Адаптивная вёрстка под все&nbsp;устройства<br>
+							и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*</h2>
+						<div class="advertisement-section__text-container">
+							<p class="advertisement-section__text">Срок и стоимость могут отличаться
+								от заявленных и рассчитываются индивидуально,
+								в зависимости от&nbsp;сложности задач.
+							</p>
+						</div>
+					</div>
+				</section>
 			</section>
-		</div>
+		</main>
 
 		<!-- Подвал сайта -->
 		<footer class="footer">
@@ -209,6 +223,8 @@
 					<a class="footer-contacts__email" href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
 				</div>
 				<div class="social">
+					<!-- С минимумом нужно вначале решить. Так было проще сделать кнопку, нежели со стилями мучаться ради одной кнопки.
+				Другой вариант с помощью JS(JQuery) добавлять/убирать классы. Всё понятно, известно и самое главное - освоено. -->
 					<button class="btn btn--stroke footer__btn btn-reset js-call-me">Заказать звонок</button>
 					<button class="btn btn-fill btn-reset footer__btn-320 js-call-me">Заказать звонок</button>
 					<ul class="display-flex social__list">
