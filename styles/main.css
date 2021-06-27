@@ -254,6 +254,8 @@ body {
 }
 
 .services-and-prices {
+  /* Если фон присвоить секции, то отступы останутся серыми */
+  /* background-color: #ffffff; */
   align-items: center;
   flex-direction: column;
   justify-content: start;
@@ -309,7 +311,6 @@ body {
 /* Секция "Примеры моих работ" */
 .second-middle-fixed-container {
   background-color: #fbfbfb;
-  max-width: 1920px;
 }
 
 .work-examples {
@@ -507,7 +508,7 @@ body {
     margin-top: -10px;
   }
 
-  .advertisement-section_text-container {
+  .advertisement-section__text-container {
     margin-top: 30px;
     max-width: 760px;
   }
@@ -526,7 +527,6 @@ body {
 
   .popup-container-call,
   .popup-container-email,
-  #nav-mob-bar,
   .work-examples__img_1024,
   .work-examples__img_320,
   .work-examples__text2,
